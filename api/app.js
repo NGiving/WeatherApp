@@ -10,8 +10,8 @@ app.use(express.static('public'));
 app.use(cookieParser());
 app.use((cors(
   {
-    origin: ["https://weather-app-ngiving.vercel.app"],
-    methods: ["POST", "GET"],
+    origin: '*',
+    methods: '*',
     credentials: true
   }
 )))
