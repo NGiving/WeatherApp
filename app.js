@@ -9,6 +9,11 @@ app.enable('trust proxy')
 app.use(express.static('public'));
 app.use(cookieParser());
 
+app.use(express.static(path.join(__dirname, "client", "build")));
+app.use((req, res, next) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
 // mongoose.set("strictQuery", false);
 // const mongoDB = process.env.NODE_ENV === 'production' ? process.env.DB_STRING_PROD : process.env.DB_STRING;
 // main().catch((err) => console.log(err));
