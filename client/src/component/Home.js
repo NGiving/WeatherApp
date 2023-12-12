@@ -6,7 +6,7 @@ function MainContainer() {
     return <main id="main-content"></main>;
 }
 
-export default function Root() {
+export default function Home() {
     return (
         <>
             <div className="main-container">

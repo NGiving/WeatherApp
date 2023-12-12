@@ -2,17 +2,16 @@
 import Fortnight from "./component/Fortnight";
 import Weekly from "./component/Weekly";
 import Hourly from "./component/Hourly";
-import Root from "./component/Root";
+import Home from "./component/Home";
 import { 
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Root from "./component/Root";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />
+    element: <Home />
   },
   {
     path: "/hourly/:country/:region/:city",
