@@ -9,13 +9,13 @@ app.enable('trust proxy')
 app.use(express.static('public'));
 app.use(cookieParser());
 
-mongoose.set("strictQuery", false);
-const mongoDB = process.env.NODE_ENV === 'production' ? process.env.DB_STRING_PROD : process.env.DB_STRING;
-main().catch((err) => console.log(err));
-mongoose.connection.once('open', () => { console.log('Connected to MongoDB') });
-async function main() {
-    await mongoose.connect(mongoDB);
-};
+// mongoose.set("strictQuery", false);
+// const mongoDB = process.env.NODE_ENV === 'production' ? process.env.DB_STRING_PROD : process.env.DB_STRING;
+// main().catch((err) => console.log(err));
+// mongoose.connection.once('open', () => { console.log('Connected to MongoDB') });
+// async function main() {
+//     await mongoose.connect(mongoDB);
+// };
 
 // const routes = require('./routes/routes');
 // app.use('/api', routes);
