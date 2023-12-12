@@ -9,7 +9,7 @@ function MainContainer() {
     const [isFetched, setIsFetched] = useState(false);
 
     useEffect(() => {
-        fetch(`${window.location.pathname}`)
+        fetch(`https://weather-app-api-ngiving.vercel.app${window.location.pathname}`)
             .then(res => {
                 if (res.status !== 200)
                     throw new Error(res.statusText);
