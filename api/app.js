@@ -1,5 +1,5 @@
 const express = require('express');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const app = express();
@@ -16,13 +16,13 @@ app.use((cors(
   }
 )))
 
-mongoose.set("strictQuery", false);
-const mongoDB = process.env.NODE_ENV === 'production' ? process.env.DB_STRING_PROD : process.env.DB_STRING;
-main().catch((err) => console.log(err));
-mongoose.connection.once('open', () => { console.log('Connected to MongoDB') });
-async function main() {
-    await mongoose.connect(mongoDB);
-};
+// mongoose.set("strictQuery", false);
+// const mongoDB = process.env.NODE_ENV === 'production' ? process.env.DB_STRING_PROD : process.env.DB_STRING;
+// main().catch((err) => console.log(err));
+// mongoose.connection.once('open', () => { console.log('Connected to MongoDB') });
+// async function main() {
+//     await mongoose.connect(mongoDB);
+// };
 
 // const routes = require('./routes/routes');
 // app.use('/api', routes);
