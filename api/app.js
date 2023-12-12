@@ -27,10 +27,10 @@ app.use((cors(
 // const routes = require('./routes/routes');
 // app.use('/api', routes);
 const appController = require('./controllers/appController')
-app.get('/api/', appController.home)
-app.get('/api/weekly/:country/:region/:city', appController.weekly)
-app.get('/api/hourly/:country/:region/:city', appController.hourly)
-app.get('/api/fortnight/:country/:region/:city', appController.fortnight)
+app.get('/', appController.home)
+app.get('/weekly/:country/:region/:city', appController.weekly)
+app.get('/hourly/:country/:region/:city', appController.hourly)
+app.get('/fortnight/:country/:region/:city', appController.fortnight)
 
 
 app.listen(process.env.PORT, () => {

@@ -4,7 +4,7 @@ const { IPinfoWrapper } = require('node-ipinfo');
 
 exports.home = async (req, res) => {
     const { country, region, city } = await getUserLocation(req) || { country: "CA", region: "Ontario", city: "Toronto" };
-    res.redirect(`/api/weekly/${country}/${region}/${city}`)
+    res.redirect(`/weekly/${country}/${region}/${city}`)
 }
 
 exports.hourly = async (req, res) => {
