@@ -9,7 +9,7 @@ function MainContainer() {
     const [isFetched, setIsFetched] = useState(false);
 
     useEffect(() => {
-        fetch(`/api${window.location.pathname}`)
+        fetch(`${window.location.pathname}`)
             .then(res => {
                 if (res.status !== 200)
                     throw new Error(res.statusText);
