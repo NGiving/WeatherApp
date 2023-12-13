@@ -63,7 +63,7 @@ function HourlyWeatherCard({ data }) {
     const [index, setIndex] = useState(1);
     if (!data) return null;
     function handleNextClick() {
-        if (index < data.times.legnth/6) setIndex(index + 1);
+        if (index < Math.round(data.times.legnth/6)) setIndex(index + 1);
     }
 
     function handlePrevClick() {

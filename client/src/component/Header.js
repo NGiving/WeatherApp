@@ -25,7 +25,7 @@ function LogoBanner() {
         </div>
     );
 }
-// redirect(`/${window.location.pathname.split('/')[1]}/${data}`)
+
 function MenuBar() {
     return (
         <div id="menu-bar">

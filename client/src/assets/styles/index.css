@@ -534,10 +534,10 @@ li::has(a.active) {
 }
 
 .map-container {
-    background-color: #33587a;
+    background-color: white;
     text-align: center;
 }
 
 #world-map {
-    background-color: whitesmoke;
+    background-color: #33587a;
 }
