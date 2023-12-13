@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { redirect, Route } from "react-router-dom";
 
 export default function LocationForm({ onSearch }) {
     const [inputValue, setInputValue] = useState('');
@@ -10,10 +9,9 @@ export default function LocationForm({ onSearch }) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        // onSearch(inputValue);
-        console.log(inputValue)
-        return <Route loader={async () => redirect('http://localhost:3000/weekly/ca/ontario/torono')} />
         setInputValue('');
+        alert(inputValue);
+        // return <Redirect to={'https://weather-app-client-gilt.vercel.app/weekly/ca/ontario/torono'} />
     }
 
     return (

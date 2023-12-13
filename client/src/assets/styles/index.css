@@ -532,3 +532,12 @@ li::has(a.active) {
     display: table-cell;
     padding-left: 5px;
 }
+
+.map-container {
+    background-color: white;
+    text-align: center;
+}
+
+#world-map {
+    background-color: black;
+}

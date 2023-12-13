@@ -1,10 +1,15 @@
 const areas = require('../public/countries+states+cities.json');
 const wmo_description = require('../public/wmo_description.json');
 const { IPinfoWrapper } = require('node-ipinfo');
+const fs = require('fs');
 
 exports.home = async (req, res) => {
-    const { country, region, city } = await getUserLocation(req) || { country: "CA", region: "Ontario", city: "Toronto" };
-    res.redirect(`/weekly/${country}/${region}/${city}`)
+    // const { country, region, city } = await getUserLocation(req) || { country: "CA", region: "Ontario", city: "Toronto" };
+    // res.redirect(`/weekly/${country}/${region}/${city}`)
+    const base64 = await fetch(`https://tile.openweathermap.org/map/temp_new/1/1/1.png?appid=${process.env.WEATHER_API_KEY}`)
+        .then(response => response.arrayBuffer())
+        .then(buffer => Buffer.from(buffer).toString('base64'))
+    res.send(base64);
 }
 
 exports.hourly = async (req, res) => {
