@@ -238,6 +238,7 @@ li::has(a.active) {
 #updateon {
     display: block;
     font-size: 0.7em;
+    margin-top: 5px;
 }
 
 .obs-area {
