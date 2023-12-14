@@ -146,28 +146,28 @@ function WeeklyWeatherCard({ data }) {
                     <span className="weekly__period-temp">{temperature}</span>
                     <span className="weekly__period-deg">°</span>
                 </div>
-                <div className="weekly__row hourly__detailed-metrics stripe">
+                <div className="weekly__row weekly__detailed-metrics stripe">
                     <span className="weekly__obs">{apparentTemperature}</span>
                 </div>
-                <div className="weekly__row hourly__detailed-metrics stripe">
+                <div className="weekly__row weekly__detailed-metrics stripe">
                     <span className="weekly__obs">{pop}</span>
                 </div>
-                <div className="weekly__row hourly__detailed-metrics stripe">
+                <div className="weekly__row weekly__detailed-metrics stripe">
                     <span className="weekly__obs">{windSpeed}</span>
                     <span className="metric">{windDirection}</span>
                 </div>
-                <div className="weekly__row hourly__detailed-metrics stripe">
+                <div className="weekly__row weekly__detailed-metrics stripe">
                     <span className="weekly__obs">{windGust}</span>
                 </div>
-                <div className="weekly__row hourly__detailed-metrics stripe">
+                <div className="weekly__row weekly__detailed-metrics stripe">
                     <span className="weekly__obs">{sunshineDuration}</span>
                     <span className="metric">h</span>
                 </div>
-                <div className="weekly__row hourly__detailed-metrics stripe">
+                <div className="weekly__row weekly__detailed-metrics stripe">
                     <span className="weekly__obs">{rainfall}</span>
                     <span className="metric">{Boolean(rain) ? 'mm' : ''}</span>
                 </div>
-                <div className="weekly__row hourly__detailed-metrics stripe">
+                <div className="weekly__row weekly__detailed-metrics stripe">
                     <span className="weekly__obs">{snow}</span>
                     <span className="metric">{Boolean(snowfall) ? 'mm' : ''}</span>
                 </div>
@@ -180,25 +180,25 @@ function WeeklyWeatherCard({ data }) {
             <span className="weekly__title">Next 7 Days</span>
             <div className="seven-day-table">
                 <div className="weekly__legend">
-                    <div className="weekly__row hourly__detailed-metrics">
+                    <div className="weekly__row weekly__detailed-metrics">
                         <div className="weekly__legend-column">Feels like</div>
                     </div>
-                    <div className="weekly__row hourly__detailed-metrics">
+                    <div className="weekly__row weekly__detailed-metrics">
                         <div className="weekly__legend-column">POP</div>
                     </div>
-                    <div className="weekly__row hourly__detailed-metrics">
+                    <div className="weekly__row weekly__detailed-metrics">
                         <div className="weekly__legend-column">Wind (km/h)</div>
                     </div>
-                    <div className="weekly__row hourly__detailed-metrics">
+                    <div className="weekly__row weekly__detailed-metrics">
                         <div className="weekly__legend-column">Wind gust (km/h)</div>
                     </div>
-                    <div className="weekly__row hourly__detailed-metrics">
+                    <div className="weekly__row weekly__detailed-metrics">
                         <div className="weekly__legend-column">Hrs Of Sun</div>
                     </div>
-                    <div className="weekly__row hourly__detailed-metrics">
+                    <div className="weekly__row weekly__detailed-metrics">
                         <div className="weekly__legend-column">24 Hr Rain</div>
                     </div>
-                    <div className="weekly__row hourly__detailed-metrics">
+                    <div className="weekly__row weekly__detailed-metrics">
                         <div className="weekly__legend-column">24 Hr Snow</div>
                     </div>
                 </div>
